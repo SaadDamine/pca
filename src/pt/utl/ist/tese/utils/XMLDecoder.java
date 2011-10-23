@@ -51,7 +51,7 @@ public class XMLDecoder {
 					NodeList fstNmElmntLst = fstElmnt.getElementsByTagName("field");
 					Element fstNmElmnt = (Element) fstNmElmntLst.item(0);
 					NodeList fstNm = fstNmElmnt.getChildNodes();
-					String path = ((Node) fstNm.item(0)).getNodeValue();
+					String path = (fstNm.item(0)).getNodeValue();
 					String dir = Main.ARTIST_PATH + File.separator + "cbir";
 					path = path.replace( "/Users/averissimo/artists/cbir/64" , "" );
 					ImageInfo img = new ImageInfo( s , ImageInfo.SUBSPACES.length );

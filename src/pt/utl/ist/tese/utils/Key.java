@@ -79,8 +79,8 @@ public class Key {
 		@Override
 		public int compare(Key obj1, Key obj2){
 
-			Key k1 = (Key) obj1;
-			Key k2 = (Key) obj2;
+			Key k1 = obj1;
+			Key k2 = obj2;
 
 			double eucl1 = k1.eucl();
 			double eucl2 = k2.eucl();
@@ -88,7 +88,7 @@ public class Key {
 			if ( eucl1 != eucl2 )
 				return (int) (eucl1 - eucl2);
 			else {
-				return (int) (k1.sub() - k2.sub());
+				return (k1.sub() - k2.sub());
 			}
 		}
 

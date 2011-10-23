@@ -288,7 +288,7 @@ public class PCA implements Serializable {
 		for ( double val : a )
 			s.add( new String( k++ + ": " + val + "\t" ));
 
-		return (String[])s.toArray(new String[ 1 ]);
+		return s.toArray(new String[ 1 ]);
 
 	}
 	/**

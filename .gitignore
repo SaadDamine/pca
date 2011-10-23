@@ -1,2 +1,3 @@
 bin/
 var/
+.ant-targets-build.xml
